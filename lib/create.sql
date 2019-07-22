@@ -12,3 +12,5 @@ CREATE TABLE projects (
   funding_goal INTEGER, 
   start_date BLOB, 
   end_date BLOB);
+  
+  CREATE TABLE pledges 
