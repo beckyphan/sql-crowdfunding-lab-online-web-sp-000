@@ -25,7 +25,7 @@ ORDER BY Users.name ASC;"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
-"SELECT Users.name, Users.age, SUM(Pledges.amount)
+"SELECT Projects.title, 
 FROM Users
 INNER JOIN Pledges
 ON Users.id = Pledges.user_id
