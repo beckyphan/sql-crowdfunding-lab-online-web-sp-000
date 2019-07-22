@@ -13,4 +13,8 @@ CREATE TABLE projects (
   start_date BLOB, 
   end_date BLOB);
   
-  CREATE TABLE pledges 
+  CREATE TABLE pledges (
+    id INTEGER, 
+    amount INTEGER, 
+    user_id INTEGER, 
+    project_id INTEGER);
