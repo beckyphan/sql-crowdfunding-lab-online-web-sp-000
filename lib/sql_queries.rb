@@ -9,7 +9,7 @@
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
 "SELECT Projects.name, Pledges.amount 
 FROM projects, pledges
-INNER JOIN Students
+LEFT JOIN projects
 ON Teacher.teacher_id = Student.teacher_id;"
 end
 
