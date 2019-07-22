@@ -9,12 +9,12 @@ CREATE TABLE projects (
   id INTEGER PRIMARY KEY, 
   title TEXT, 
   category TEXT, 
-  funding_goal INTEGER, 
+  funding_goal REAL, 
   start_date BLOB, 
   end_date BLOB);
   
   CREATE TABLE pledges (
     id INTEGER PRIMARY KEY, 
-    amount INTEGER, 
+    amount REAL, 
     user_id INTEGER, 
     project_id INTEGER);
