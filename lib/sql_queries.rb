@@ -10,7 +10,8 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
 "SELECT Projects.name, Pledges.amount 
 FROM projects, pledges
 LEFT JOIN projects
-ON Project.id = Pledge.;"
+ON Project.id = Pledge.project_id
+GROUP BY ;"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
