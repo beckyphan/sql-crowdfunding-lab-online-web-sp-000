@@ -16,11 +16,11 @@ ORDER BY Projects.title ASC;"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
-"SELECT User.name, User.age, SUM(Pledges.amount)
+"SELECT Users.name, Users.age, SUM(Pledges.amount)
 FROM Users
 INNER JOIN Pledges
-ON User.id = Pledges.user_id
-GROUP BY User.id
+ON Users.id = Pledges.user_id
+GROUP BY Users.id
 ORDER BY User.name ASC;"
 end
 
